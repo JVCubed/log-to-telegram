@@ -1,9 +1,7 @@
 #!/usr/bin/python
 
 # imports
-#  install 'tailer' with 'pip install tailer'
 import tailer
-#  install 'telegram-send' with 'pip install telegram-send'
 import telegram_send
 
 # blocklist
