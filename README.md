@@ -13,3 +13,5 @@ A python script for reading growing log files and sending notifications via the 
 
 # About this script
 This script uses the 'tailer' module to read the appended lines of a log file. 'tailer' is a python implementation of the GNU tail and head commands. The script will then check those lines against the blocklist and if there is a match it will use telegram-send to send the entire line via the Telegram API to your configured chat or group. Be aware of the Telegram API limitations as described in https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this
+
+tip: use a task or job to run this script when a process or machine is starting to retrieve all configured notifications of the configured log.
