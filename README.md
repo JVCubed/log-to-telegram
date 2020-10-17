@@ -5,7 +5,7 @@ A python script for reading growing log files and sending notifications via the 
 - tailer; see https://pypi.org/project/tailer/ for more information about this module.
 - telegram-send; see https://pypi.org/project/telegram-send/ for more information about this module.
 
-# Requirements:
+# Pre-requirements:
 - Create a Telegram bot (https://core.telegram.org/bots).
 - Make sure to use 'telegram-send --configure' to configure telegram-send with your telegram API
 - Create a blocklist file or modify the path to use an existing file
