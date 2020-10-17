@@ -13,5 +13,6 @@ for line in tailer.follow(open('squid.txt')):
     for unwantedUrl in blocklist:
         # if there exist a line with a entry on the blocklist, do 'telegram-send'
         if unwantedUrl in line:
+            # disabling potential links to be clickable by putting the dot between brackets
             safeUrl = line.replace(".", "[.]")
             telegram_send.send(messages=[safeUrl], conf=None, disable_web_page_preview="true")
