@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 
 # imports
-import tailer
+import tailhead
 import telegram_send
 
 # blocklist
 blocklist = open("blocklist.txt", "r").read().split()
 
 # Follow the file as it grows
-for line in tailer.follow(open('logfile.txt')):
+for line in tailhead.follow_path('logfile.txt'):
     # check against blocklist
     for unwantedUrl in blocklist:
         # if there exist a line with a entry on the blocklist, do 'telegram-send'
