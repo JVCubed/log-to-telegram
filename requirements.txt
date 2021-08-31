@@ -1,0 +1,2 @@
+telegram-send==0.25
+tailhead==1.0.2
